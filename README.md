@@ -1,1 +1,1 @@
-# Todo application
+# Application to manage my time
