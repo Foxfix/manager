@@ -1,3 +1,7 @@
 .NewItem {
-    margin: 10px 0;
+    margin-top: 10px;
+}
+
+.NewItem input {
+    margin-right: 3px;
 }
