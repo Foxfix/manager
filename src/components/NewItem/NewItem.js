@@ -14,7 +14,10 @@ export default class NewItem extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    this.props.onAdded(this.state.label)
+    this.props.onAdded(this.state.label);
+    this.setState({
+      label: ''
+    })
   };
 
   render() {
@@ -22,7 +25,8 @@ export default class NewItem extends Component {
       <form className="NewItem d-flex"
       onSubmit={this.onSubmit}>
         <input type="text" className="form-control"
-          onChange={this.onLabelChange}
+               onChange={this.onLabelChange}
+               value={this.state.label}
                placeholder="What I have to do ..."/>
         <button
           className="btn btn-info  float-right">
