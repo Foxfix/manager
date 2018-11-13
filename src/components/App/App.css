@@ -1,5 +1,9 @@
 .index {
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 5px auto;
   max-width: 400px;
+}
+
+.indexSearch {
+  margin: 0 3px 5px 0;
 }
 
